@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#07080b">
+<title>Lugia — Build Guide</title>
+<style>
+:root{
+  --bg:#07080b;--s1:#10131a;--s2:#151a23;--line:rgba(255,255,255,.08);
+  --line2:rgba(255,255,255,.13);--ink:#f4f5f8;--soft:#aeb5c2;--muted:#737c8d;
+  --gold:#ffc94d;--gold2:#ff9f2e;--green:#4fd69c;--red:#ff6b72;
+  --blue:#54b8ff;--radius:18px;
+  --font:system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--font);line-height:1.45}
+.app{max-width:520px;margin:auto;min-height:100vh;padding-bottom:34px}
+.header{padding:18px 20px 15px;border-bottom:1px solid var(--line)}
+.back{font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
+.hero{display:flex;align-items:center;gap:14px}
+.dex{width:58px;height:58px;border-radius:16px;display:grid;place-items:center;
+background:linear-gradient(145deg,var(--gold),var(--gold2));color:#171006;font-weight:900;font-size:1rem;
+box-shadow:0 7px 20px rgba(255,170,40,.22)}
+.hero-img{width:68px;height:68px;object-fit:contain;order:2;filter:drop-shadow(0 5px 14px rgba(60,170,255,.25))}
+.hero-info{flex:1}
+.name{font-size:1.55rem;font-weight:800;letter-spacing:-.035em}
+.kicker{font-size:.63rem;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-top:3px}
+.type{display:inline-block;margin-top:7px;padding:4px 10px;border:1px solid var(--line2);border-radius:8px;
+font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);background:var(--s2)}
+main{padding:0 20px}
+.section{margin-top:24px}
+h2{font-size:1rem;margin-bottom:10px}
+.icons{display:flex;gap:12px}
+.icon{width:78px;height:78px;border-radius:14px;background:var(--s2);border:2px solid #7e43bd;
+object-fit:cover;box-shadow:0 0 18px rgba(180,70,255,.15)}
+.personality{display:flex;flex-direction:column;gap:9px}
+.personality-card{border:1px solid #1d4568;background:linear-gradient(110deg,#111b2d,#0e1b2a);
+border-radius:14px;padding:12px 15px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.personality-name{font-size:.88rem;color:#b7bfcd}
+.stats{display:flex;gap:14px;font-family:ui-monospace,monospace;font-size:.72rem;white-space:nowrap}
+.neg{color:#ff6b72}.pos{color:#4fd69c}
+.items{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;align-items:center;gap:13px;padding:11px;border:1px solid var(--line2);border-radius:16px;background:var(--s1)}
+.item img{width:56px;height:56px;object-fit:contain;border-radius:12px;background:#0c1017}
+.item-name{font-size:.9rem;font-weight:700}.stars{font-size:.72rem;color:var(--gold);margin-top:2px}
+.gear{display:flex;flex-direction:column;gap:9px}
+.gear-row{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1px solid var(--line2);
+border-radius:15px;background:var(--s1)}
+.gear-label{width:62px;color:#9099a9;font-size:.76rem;font-weight:700}
+.gear-icons{display:flex;gap:9px}
+.gear-icons img{width:55px;height:55px;object-fit:contain;border-radius:11px;background:#0c1017}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:6px}
+.skill{aspect-ratio:1;border-radius:10px;object-fit:cover;background:#111722;border:1px solid var(--line2)}
+.disclaimer{margin-top:22px;padding:13px;border:1px solid rgba(255,201,77,.35);background:rgba(255,201,77,.09);
+border-radius:14px;color:#bfc5d0;font-size:.73rem}
+.disclaimer b{color:var(--gold)}
+.note{margin-top:9px;color:#667184;font-size:.66rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="app">
+<header class="header">
+  <div class="back">← BUILD GUIDE</div>
+  <div class="hero">
+    <div class="dex">#249</div>
+    <div class="hero-info">
+      <div class="name">Lugia</div>
+      <div class="kicker">CREATOR BUILD</div>
+      <div class="type">Psychic / Flying</div>
+    </div>
+    <img class="hero-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png" alt="Lugia">
+  </div>
+</header>
+
+<main>
+<section class="section">
+  <h2>Abilities</h2>
+  <div class="icons">
+    <img class="icon" src="images/lugia-ability-1.webp" alt="Lugia ability 1">
+    <img class="icon" src="images/lugia-ability-2.webp" alt="Lugia ability 2">
+  </div>
+</section>
+
+<section class="section">
+  <h2>Personality</h2>
+  <div class="personality">
+    <div class="personality-card">
+      <span class="personality-name">Modest</span>
+      <div class="stats"><span class="neg">P.ATK -10%</span><span class="pos">SP.ATK +10%</span></div>
+    </div>
+    <div class="personality-card">
+      <span class="personality-name">Timid</span>
+      <div class="stats"><span class="neg">P.ATK -10%</span><span class="pos">SPD +10%</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Held Item</h2>
+  <div class="items">
+    <div class="item"><img src="images/quick-claw.webp" alt="Quick Claw"><div><div class="item-name">Quick Claw</div><div class="stars">★★</div></div></div>
+    <div class="item"><img src="images/wise-glasses.webp" alt="Wise Glasses"><div><div class="item-name">Wise Glasses</div><div class="stars">★</div></div></div>
+    <div class="item"><img src="images/dragon-fang-plus9.webp" alt="Dragon Fang +9"><div><div class="item-name">Dragon Fang +9</div><div class="stars">★</div></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Gear</h2>
+  <div class="gear">
+    <div class="gear-row"><div class="gear-label">Thunder</div><div class="gear-icons">
+      <img src="images/thunder-1.webp" alt=""><img src="images/thunder-2.webp" alt=""><img src="images/thunder-3.webp" alt="">
+    </div></div>
+    <div class="gear-row"><div class="gear-label">Mars</div><div class="gear-icons">
+      <img src="images/mars-1.webp" alt=""><img src="images/mars-2.webp" alt=""><img src="images/mars-3.webp" alt="">
+    </div></div>
+    <div class="gear-row"><div class="gear-label">Endless</div><div class="gear-icons">
+      <img src="images/endless-1.webp" alt=""><img src="images/endless-2.webp" alt=""><img src="images/endless-3.webp" alt="">
+    </div></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Hidden Skills</h2>
+  <div class="skills">
+    <img class="skill" src="images/lugia-hidden-1.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-2.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-3.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-4.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-5.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-6.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-7.webp" alt="">
+    <img class="skill" src="images/lugia-hidden-8.webp" alt="">
+  </div>
+</section>
+
+<div class="disclaimer"><b>Disclaimer:</b> This is a basic recommended build. Some builds might need to be changed in order to adapt your Pokémon to the current meta, or to simply adapt yourself to the enemies you play against.</div>
+<div class="note">LEGENDARY HUB · BUILD GUIDE</div>
+</main>
+</div>
+</body>
+</html>
